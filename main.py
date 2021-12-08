@@ -18,7 +18,7 @@ project = 'stock-data-331621'
 table_name = 'historical.stock-ohlc-us'
 
 
-def stock_ohlc_load(request):
+def run_function(request):
 
     try:
         r = requests.get(base_url + ohlc_url + trading_day, params=params)
